@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PresiBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/presidencylogo.png') }}" alt="Presidency Logo" class="logo">
+        <h1>PresiBot</h1>
+    </div>
+
+    <div id="chat-container"></div>
+    <div class="input-container">
+        <input type="text" id="message" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <div class="sidebar">
+        <a href="https://presidencyuniversity.linways.com/ams/student/home" target="_blank">LINWAYS</a>
+        <a href="https://presidencyuniversity.linways.com/ams/student/my-fee/pay-fee?redir=true" target="_blank">My Fee</a>
+        <a href="https://presidencyuniversity.linways.com/ams/attendance/consolidated-attendance-report?redir=true" target="_blank">Attendance</a>
+        <a href="https://presidencyuniversity.linways.com/ams/my-timetable/timetable?redir=true" target="_blank">Timetable</a>
+        <a href="https://presidencyuniversity.linways.com/ams/student/academic-calender?redir=true" target="_blank">Academic Calender</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
